@@ -1,0 +1,139 @@
+.container{
+    min-width: 550px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+    padding-top: 5px;
+}
+.header{ 
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.header .section{
+    padding: 10px;
+    border-bottom: 2px soild transparent;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.header .active{
+    border-bottom: 2px solid #239ce2;
+    color: #239ce2;
+}
+.body{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 0;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.detail .row{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.detail .column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.detail .row > div {
+    flex:1;
+}
+.chip {
+    display:flex;
+    gap: 8px;
+    height: 50px;
+    width: 150px;
+    padding: 0px 8px ;
+    margin-left: 20px;
+    margin-top: 0px;
+    background-color:#752ceb;
+    border-radius: 10px;
+    align-items: center;
+   
+
+}
+.chip:hover{
+    background-color:rgb(163, 55, 225);
+    
+    transform: scale(1.1);
+    transition:step-start;
+    box-shadow: #239ce2;
+    
+
+}
+.chip p {
+    font-size: 16px;
+    line-height: 1.35rem;
+    color: #fff;
+   
+}
+.chip svg {
+    color: white;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+.chip .active {
+    background-color: #239ce2;
+}  
+.chip .active svg {
+    color: #fff;
+}
+.new{
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    
+    
+    
+}
+.new button{
+    width: 60px;
+    height: 40px;
+    background-color:#5f01f6;
+    padding: 0px 8px;
+    color: white;
+    margin-left: 30px;
+    border: none;
+    font-size: 30px;
+   
+    
+
+}
+.body button{
+
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #6c23e2;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+}
+.body button:active{
+    transform: translateY(2px);
+}

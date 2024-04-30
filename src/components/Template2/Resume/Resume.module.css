@@ -1,0 +1,185 @@
+/* ResumeStyles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display:flex;
+  flex-direction:column;
+
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+.subHeading {
+  font-size: 18px;
+  color:rgba(100, 148, 237, 0.614);
+
+}
+
+.Image {
+  max-width: 160px;
+ 
+  margin-right: 20px;
+  right: 30px;
+  border-radius: 30%;
+ background-color: #3498db;
+}
+
+.profileImage {
+  margin-top: 4%;
+  width: 90%;
+  border-radius: 30%;
+  margin-left: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Image:hover .profileImage {
+  transform: scale(1.1);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link svg {
+  margin-right: 5px;
+}
+
+.link:hover {
+  color: #3498db;
+}
+
+.main {
+  display:contents;
+  flex-wrap: wrap;
+}
+
+.col1,
+.col2 {
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sectionTitle {
+  padding: 15px;
+  background-color: #3498db;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.content {
+  padding: 15px;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subTitle {
+  font-size: 16px;
+  color: #555;
+}
+
+.date {
+  font-size: 14px;
+  color: #777;
+}
+
+.points {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.point {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.overview {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.numbered {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.bulletList {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.bulletPoint {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .col1, .col2 {
+    flex: 100%;
+  }
+}
